@@ -1,5 +1,30 @@
 # apiDoc Changelog
 
+
+#### 0.7.1
+
+Add type for `@apiExample {type} Title`, `@apiSuccessExample`, `@apiErrorExample`.
+
+Add type switch in template.
+
+Append filetype to fields at ajax reuqest testform.
+
+Bugfix: Same file handling with regexp under win32. (https://github.com/apidoc/apidoc/issues/109)
+
+
+#### 0.7.0
+
+Add rudimentary support for direct api calls (test requests) from within the doc.
+* New configuration var [sampleUrl](http://apidocjs.com#configuration-settings-sample-url) for `apidoc.json`.
+* [@apiSampleRequest](http://apidocjs.com#param-api-sample-request)
+
+Added ability to have forward slash (/) in parameter field names.
+
+Add parameter `--parse` for parse only the files and return the parsed data. 
+
+Allow perl comments between "=pod" and "=cut".
+
+
 #### 0.6.5
 
 Bugfix: Change RegExp for parameter values to handle all chars. (https://github.com/apidoc/apidoc/issues/97)
